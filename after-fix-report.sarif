@@ -1,0 +1,1 @@
+[31mERROR  [0m Status: failed to get image local://diego64/kube-news-security:after-fix: failed to inspect image: Error response from daemon: No such image: diego64/kube-news-security:after-fix, Code: 1 

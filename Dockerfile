@@ -1,4 +1,4 @@
-FROM node:22.16.0
+FROM node:24-slim
 WORKDIR /app
 RUN apt-get update && apt-get install -y
 RUN addgroup --gid 2001 dev && adduser --disabled-password --gecos '' --uid 2001 --ingroup dev dev

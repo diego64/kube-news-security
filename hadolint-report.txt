@@ -1,0 +1,5 @@
+Dockerfile:1 DL3006 Always tag the version of an image explicitly
+Dockerfile:4 DL3009 Delete the package lock file
+Dockerfile:6 DL3003 Use WORKDIR to switch to a directory
+Dockerfile:7 DL3025 Use only an allowed base image
+Dockerfile:8 DL3020 Use COPY instead of ADD
