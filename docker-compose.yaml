@@ -1,0 +1,40 @@
+version: "3.8"
+
+networks:
+  kubenewssecurity-net:
+    name: kubenewssecurity-net
+    driver: bridge
+
+volumes:
+  kubenews_vol:
+
+services:
+  postgres:
+    image: postgres
+    container_name: kubenews-security-database
+    environment:
+    - POSTGRES_USER=${DB_USERNAME}
+    - POSTGRES_PASSWORD=${DB_PASSWORD}
+    - POSTGRES_DB=${DB_DATABASE}
+    ports:
+      - 5432:5432
+    networks:
+      - kubenewssecurity-net
+    restart: always
+    volumes:
+      - kubenews_vol:/var/lib/postgresql/data
+
+  api:
+    container_name: kubenews-security-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3333
+    env_file:
+      - .env
+    restart: always
+    depends_on:
+      - postgres
+    networks:
+      - kubenewssecurity-net
