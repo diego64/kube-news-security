@@ -6,11 +6,11 @@
 
 [EN]
 
-Kube-News Security is a repository based on https://github.com/KubeDev/kube-news that aims to take an application written in Node.Js and apply the best security and performance concepts with the ultimate goal of creating a Docker container with reduced size, secure base image, author reliability and security.
+Kube-News Security is a repository based on the Kube-News project, with the goal of applying best security and performance practices when creating containers. The focus of this repository is to demonstrate how to build, in a secure and efficient way, a containerized environment for running applications — in this specific case, an application developed in Node.js.
 
 [PT-BR]
 
-Kube-News Security é um repositório com base no https://github.com/KubeDev/kube-news que tem como próposito colocar em proposito pegar uma aplicação escrita em Node.Js e aplicar os melhores conceitos de seguraça e performace com o objetivo final de cirar um container Docker com tamanho reduzido, imagem base segura, confiabilidade do autor e seguro.
+Kube-News Security é um repositório baseado no projeto Kube-News, com o objetivo de aplicar as melhores práticas de segurança e desempenho na criação de containers. O foco deste repositório é demonstrar como construir, de forma segura e eficiente, um ambiente containerizado para execução de aplicações — neste caso específico, uma aplicação desenvolvida em Node.js.
 
 ---
 
